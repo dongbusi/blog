@@ -6,7 +6,7 @@ heroImage: /img/avaturl.jpeg
 heroText: 只沾花不惹草
 tagline: 不折腾的前端和咸鱼有什么区别
 actionText: 立即开始 →
-actionLink: /page/
+actionLink: /dom/
 features:
 - title: 简洁清晰
   details: 以 vuepress 为中心的项目结构，简洁清晰。
