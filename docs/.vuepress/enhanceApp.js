@@ -10,13 +10,13 @@ export default ({
     // ...
     // encodeURIComponent
     if (to.hash) {
+      if (document.querySelectorAll('.active.sidebar-link').length !== 0) return
       setTimeout(() => {
         let hashList = Array.prototype.map.call(document.querySelectorAll('.sidebar-link'),(item => item.hash));
         let index = hashList.findIndex(item => item == to.hash);
-        document.querySelectorAll('.sidebar-link')[index].className = 'active' + ' sidebar-link'
-        document.querySelectorAll('.sidebar-link')[index].scrollIntoView()
+        let a = document.querySelectorAll('.sidebar-link')[index]
+        a && a.click()
       }, 300);
     }
-    
   })
 }
