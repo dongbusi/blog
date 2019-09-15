@@ -9,11 +9,14 @@ export default ({
   router.afterEach((to, from, next) => {
     // ...
     // encodeURIComponent
-    setTimeout(() => {
-      let hashList = Array.prototype.map.call(document.querySelectorAll('.sidebar-link'),(item => item.hash));
-      let index = hashList.findIndex(item => item == to.hash);
-      document.querySelectorAll('.sidebar-link')[index].className = 'active' + ' sidebar-link'
-      document.querySelectorAll('.sidebar-link')[index].scrollIntoView()
-    }, 300);
+    if (to.hash) {
+      setTimeout(() => {
+        let hashList = Array.prototype.map.call(document.querySelectorAll('.sidebar-link'),(item => item.hash));
+        let index = hashList.findIndex(item => item == to.hash);
+        document.querySelectorAll('.sidebar-link')[index].className = 'active' + ' sidebar-link'
+        document.querySelectorAll('.sidebar-link')[index].scrollIntoView()
+      }, 300);
+    }
+    
   })
 }
