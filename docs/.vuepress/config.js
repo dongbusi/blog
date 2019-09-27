@@ -45,12 +45,13 @@ module.exports = {
         },
         nav: [
           { text: 'blog', link: 'http://www.nantiewang.cn'},
-          { text: 'home', link: '/'},
+          { text: 'home', link: '/en/'},
           { text: 'layout', items: [
             { text: 'HTML', link: '/en/dom/'},
             { text: 'CSS', link: '/en/css/'},
             { text: 'SCSS/SASS', link: '/en/css-scss/'},
           ]},
+          { text: 'else', link: '/else/'}
         ],
         sidebar: 'auto',
         lastUpdated: 'Last Updated',
@@ -74,6 +75,7 @@ module.exports = {
             { text: 'CSS', link: '/css/'},
             { text: 'SASS', link: '/css-scss/'},
           ]},
+          { text: '其他', link: '/else/'},
         ],
         sidebar: 'auto',
         lastUpdated: '最后更新时间',
