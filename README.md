@@ -8,4 +8,4 @@
 
 ## issues
 
-  直接在 https://github.com/dongbusi/blog/issues 提,看到会及时修改的。
+  直接在 https://github.com/mipawn/blog/issues 提,看到会及时修改的。
